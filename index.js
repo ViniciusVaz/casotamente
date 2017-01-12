@@ -1,7 +1,9 @@
-var Hapi = require(‘hapi’);
+var Hapi = require('hapi');
 var server = new Hapi.Server();
-server.connection({ port: 80 });
+
+server.connection({ port: 5050 });
  
 server.start(function (err) {
-  // Server running on port 80
+    console.log("Hello World!")
+  // Server running on port 5050
 });
